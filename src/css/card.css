@@ -1,0 +1,125 @@
+.card-container {
+  background-color: #f3f3f3;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(238, 238, 238);
+  height: 100%;
+  /* padding-top: 55px; */
+}
+.card-container-item {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: #f3f3f3;
+}
+.image-container {
+  width: 20%;
+}
+.item-container {
+  width: 55%;
+  text-align: left;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* flex-direction: column; */
+}
+.button-container {
+  width: 25%;
+  /* text-align: right; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.item-text {
+  color: #6daf80;
+  font-size: 12px;
+}
+.item-description {
+  font-size: 12px;
+  text-align: justify;
+}
+.item-title {
+  font-weight: bold;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.item-price {
+  font-weight: bold;
+  color: red;
+  font-size: 30px;
+}
+.item-button {
+  margin-top: 20px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #9dea4d;
+  border: none;
+  font-size: 12px;
+  width: 160px;
+}
+.item-button:hover {
+  margin-top: 20px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #87d732;
+  border: none;
+  font-size: 12px;
+}
+.card-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.image-style-item {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+@media screen and (max-width: 1290px) {
+  .image-container {
+    width: 30%;
+  }
+  .item-container {
+    width: 40%;
+    text-align: left;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* flex-direction: column; */
+  }
+  .button-container {
+    width: 30%;
+    /* text-align: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1090px) {
+  /* Styles for screens with a maximum width of 768px */
+  .card-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .image-style-item {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+  .item-container {
+    width: 100%;
+    text-align: center;
+  }
+  .button-container {
+    width: 100%;
+    /* text-align: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

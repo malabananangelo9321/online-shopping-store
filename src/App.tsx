@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { HashRouter, Route, Routes, useNavigate } from "react-router-dom";
+import Navigation from "./components/navigation/Navigation";
+import IndexProducts from "./apps/online-shopping-store/products/pages/IndexProducts";
+import "./css/navigation.css";
+import "./css/products.css";
+import "./css/card.css";
+import "./css/list.css";
+import "./css/input.css";
+import "./css/mycart.css";
+import "./css/incrementbutton.css";
+import "./css/modal.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Navigation />}>
+            <Route path="/" element={<IndexProducts />} />
+          </Route>
+        </Routes>
+      </HashRouter>
     </div>
   );
 }

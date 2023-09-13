@@ -1,0 +1,122 @@
+.my-cart-list {
+  width: 100%;
+  position: relative;
+}
+.my-cart-image {
+  width: 30%;
+}
+.my-cart-name {
+  width: 40%;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+.my-cart-button {
+  width: 100%;
+}
+
+.my-cart-container {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.my-cart-image-style {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.my-cart-button-display {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.my-cart-list-price {
+  color: red;
+}
+.clear-icon {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.clear-icon:hover {
+  background-color: rgb(238, 104, 104);
+}
+.my-cart-contain {
+  /* margin-top: 20px; */
+  max-height: 65%;
+  overflow-y: auto;
+}
+.checkout-container {
+  position: absolute;
+  bottom: 0;
+  background-color: #c7c6c6;
+  width: 100%;
+}
+.checkout-outlined {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.checkout-total-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+.checkout-item-test {
+  font-weight: bold;
+}
+.checkout-item-test-price {
+  font-weight: bold;
+  color: red;
+}
+.checkout-item-price-total {
+  font-weight: bold;
+  color: red;
+  font-size: 30px;
+}
+.checkout-button {
+  width: 100%;
+  background-color: #9dea4d;
+  padding: 12px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.checkout-button:hover {
+  width: 100%;
+  background-color: #8cda38;
+}
+@media screen and (max-width: 768px) {
+  .checkout-item-price-total {
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+  }
+  .my-cart-image {
+    width: 30%;
+  }
+  .my-cart-name {
+    width: 40%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /* Styles for screens with a maximum width of 768px */
+}

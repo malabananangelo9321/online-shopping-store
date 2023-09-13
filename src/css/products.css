@@ -1,0 +1,107 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* height: 96.5vh; */
+}
+.left-menu {
+  margin-top: 52px;
+  width: 15%;
+  position: fixed;
+  height: 100%;
+}
+.middle-container {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* padding: 30px; */
+  padding-top: 70px;
+  width: 60%;
+  /* background-color: red; */
+  margin-left: 15%;
+  margin-right: 25%;
+  /* background-color: red; */
+}
+.right-menu {
+  width: 25%;
+  /* margin-top: 55px; */
+  position: fixed;
+  height: 100%;
+  right: 0;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.main-container {
+  padding: 30px;
+}
+.my-cart {
+  margin-top: 50px;
+}
+.my-cart-title-container {
+  padding: 15px;
+  background-color: #c7c6c6;
+  text-align: left;
+  padding-bottom: 7px;
+  padding-right: 7px;
+  font-weight: bold;
+  padding-left: 30px !important;
+}
+.my-cart-button {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.clear-button {
+  background-color: red;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.right-menu-new {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.left-menu-new {
+  margin-top: 52px;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px */
+  .left-menu {
+    display: none;
+  }
+
+  .right-menu {
+    display: none;
+  }
+
+  .middle-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+.class-sort-container {
+  display: flex;
+  width: 190px;
+  /* background-color: red; */
+  justify-content: space-between;
+
+  /* background-color: red; */
+}
+.sortButton {
+  cursor: pointer;
+}

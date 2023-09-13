@@ -1,0 +1,12 @@
+.increment-container {
+  display: flex;
+}
+.increment-input {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  margin-left: 10px;
+  /* border: none; */
+  outline: none;
+  text-align: center;
+}
